@@ -2,6 +2,7 @@ package seedu.loyaltylift.logic.commands;
 
 import static seedu.loyaltylift.commons.util.CollectionUtil.requireAllNonNull;
 import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_REMARK;
+import seedu.loyaltylift.model.person.Remark;
 
 import seedu.loyaltylift.commons.core.index.Index;
 import seedu.loyaltylift.logic.commands.exceptions.CommandException;
@@ -22,13 +23,13 @@ public class RemarkCommand extends Command {
             + "r/ Likes to swim.";
 
     private final Index index;
-    private final String remark;
+    private final Remark remark;
 
     /**
      * @param index of the person in the filtered person list to edit the remark
      * @param remark of the person to be updated to
      */
-    public RemarkCommand(Index index, String remark) {
+    public RemarkCommand(Index index, Remark remark) {
         requireAllNonNull(index, remark);
 
         this.index = index;

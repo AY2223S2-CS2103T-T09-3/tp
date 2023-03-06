@@ -8,6 +8,7 @@ import seedu.loyaltylift.commons.core.index.Index;
 import seedu.loyaltylift.commons.exceptions.IllegalValueException;
 import seedu.loyaltylift.logic.commands.RemarkCommand;
 import seedu.loyaltylift.logic.parser.exceptions.ParseException;
+import seedu.loyaltylift.model.person.Remark;
 
 /**
  * Parses input arguments and creates a new {@code RemarkCommand} object
@@ -32,6 +33,6 @@ public class RemarkCommandParser implements Parser<RemarkCommand> {
 
         String remark = argMultimap.getValue(PREFIX_REMARK).orElse("");
 
-        return new RemarkCommand(index, remark);
+        return new RemarkCommand(index, new Remark(remark));
     }
 }
