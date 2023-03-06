@@ -24,6 +24,7 @@ import seedu.loyaltylift.model.person.Email;
 import seedu.loyaltylift.model.person.Name;
 import seedu.loyaltylift.model.person.Person;
 import seedu.loyaltylift.model.person.Phone;
+import seedu.loyaltylift.model.person.Remark;
 import seedu.loyaltylift.model.tag.Tag;
 
 /**
@@ -96,10 +97,11 @@ public class EditCommand extends Command {
         Name updatedName = editPersonDescriptor.getName().orElse(personToEdit.getName());
         Phone updatedPhone = editPersonDescriptor.getPhone().orElse(personToEdit.getPhone());
         Email updatedEmail = editPersonDescriptor.getEmail().orElse(personToEdit.getEmail());
+        Remark updatedRemark = personToEdit.getRemark();
         Address updatedAddress = editPersonDescriptor.getAddress().orElse(personToEdit.getAddress());
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
 
-        return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedTags);
+        return new Person(updatedName, updatedPhone, updatedEmail, updatedRemark, updatedAddress, updatedTags);
     }
 
     @Override
