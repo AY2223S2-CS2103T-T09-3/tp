@@ -1,8 +1,6 @@
 package seedu.loyaltylift.model;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static seedu.loyaltylift.logic.commands.CommandTestUtil.VALID_ADDRESS_BOB;
 import static seedu.loyaltylift.logic.commands.CommandTestUtil.VALID_TAG_HUSBAND;
 import static seedu.loyaltylift.testutil.Assert.assertThrows;

@@ -2,12 +2,7 @@ package seedu.loyaltylift.logic.commands;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_ADDRESS;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_CUSTOMER_TYPE;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_EMAIL;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_NAME;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_PHONE;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_TAG;
+import static seedu.loyaltylift.logic.parser.CliSyntax.*;
 import static seedu.loyaltylift.testutil.Assert.assertThrows;
 
 import java.util.ArrayList;

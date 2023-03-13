@@ -1,14 +1,9 @@
 package seedu.loyaltylift.logic.commands;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static seedu.loyaltylift.commons.core.Messages.MESSAGE_CUSTOMERS_LISTED_OVERVIEW;
 import static seedu.loyaltylift.logic.commands.CommandTestUtil.assertCommandSuccess;
-import static seedu.loyaltylift.testutil.TypicalCustomers.CARL;
-import static seedu.loyaltylift.testutil.TypicalCustomers.ELLE;
-import static seedu.loyaltylift.testutil.TypicalCustomers.FIONA;
-import static seedu.loyaltylift.testutil.TypicalCustomers.getTypicalAddressBook;
+import static seedu.loyaltylift.testutil.TypicalCustomers.*;
 
 import java.util.Arrays;
 import java.util.Collections;

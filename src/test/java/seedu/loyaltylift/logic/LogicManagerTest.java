@@ -3,10 +3,7 @@ package seedu.loyaltylift.logic;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static seedu.loyaltylift.commons.core.Messages.MESSAGE_INVALID_CUSTOMER_DISPLAYED_INDEX;
 import static seedu.loyaltylift.commons.core.Messages.MESSAGE_UNKNOWN_COMMAND;
-import static seedu.loyaltylift.logic.commands.CommandTestUtil.ADDRESS_DESC_AMY;
-import static seedu.loyaltylift.logic.commands.CommandTestUtil.EMAIL_DESC_AMY;
-import static seedu.loyaltylift.logic.commands.CommandTestUtil.NAME_DESC_AMY;
-import static seedu.loyaltylift.logic.commands.CommandTestUtil.PHONE_DESC_AMY;
+import static seedu.loyaltylift.logic.commands.CommandTestUtil.*;
 import static seedu.loyaltylift.testutil.Assert.assertThrows;
 import static seedu.loyaltylift.testutil.TypicalCustomers.AMY;
 

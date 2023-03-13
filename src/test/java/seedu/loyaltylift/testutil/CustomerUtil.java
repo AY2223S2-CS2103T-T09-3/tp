@@ -1,11 +1,6 @@
 package seedu.loyaltylift.testutil;
 
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_ADDRESS;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_CUSTOMER_TYPE;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_EMAIL;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_NAME;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_PHONE;
-import static seedu.loyaltylift.logic.parser.CliSyntax.PREFIX_TAG;
+import static seedu.loyaltylift.logic.parser.CliSyntax.*;
 
 import java.util.Set;
 
