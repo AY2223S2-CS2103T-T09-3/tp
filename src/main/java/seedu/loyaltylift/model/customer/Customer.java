@@ -29,7 +29,7 @@ public class Customer {
     private final Set<Tag> tags = new HashSet<>();
 
     private final Points points;
-    
+
     /**
      * Every field must be present and not null.
      */
