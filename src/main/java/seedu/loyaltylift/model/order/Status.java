@@ -68,10 +68,11 @@ public class Status implements Comparable<Status> {
     /**
      * Returns a new {@code Status} with a copy of this StatusUpdate with
      * a new StatusUpdate with a "Cancelled" StatusValue as the next StatusValue.
-     * Should not be called when Status is at Completed stage.
+     * Should not be called when Status is already at completed or cancelled stage.
      */
     public Status newStatusForCancelledOrder(LocalDate date) {
-        if (getLatestStatus().statusValue.equals(StatusValue.COMPLETED)) {
+        if (getLatestStatus().statusValue.equals(StatusValue.COMPLETED)
+                || getLatestStatus().statusValue.equals(StatusValue.CANCELLED)) {
             throw new IllegalStateException();
         }
 
